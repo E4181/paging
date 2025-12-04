@@ -1,0 +1,41 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/backlight.h>
+
+/ {
+    keymap0: keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "default";
+            bindings = <
+                &trans          &trans
+                &trans  &trans  &trans 
+                &trans  &trans  &trans
+                &trans          &trans        
+            >; 
+        };
+
+        fn_layer {
+            display-name = "fn";
+            bindings = <
+                &trans          &trans
+                &trans  &trans  &trans 
+                &trans  &trans  &trans
+                &trans          &trans  
+            >;
+        };
+
+        tri_layer {
+            display-name = "tri";
+            bindings = <
+                &trans          &trans
+                &trans  &trans  &trans 
+                &trans  &trans  &trans
+                &trans          &trans 
+            >;
+        };
+    };
+};
