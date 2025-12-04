@@ -16,6 +16,7 @@
                 &trans  &trans  &trans
                 &trans          &trans        
             >; 
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         fn_layer {
@@ -26,6 +27,7 @@
                 &trans  &trans  &trans
                 &trans          &trans  
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         tri_layer {
@@ -36,6 +38,7 @@
                 &trans  &trans  &trans
                 &trans          &trans 
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
